@@ -9,13 +9,20 @@ import Foundation
 
 class ListViewModel: ObservableObject {
     @Published var regions: [Region] = []
-    
-    init() {
+    private let service: Service
+
+    init(service: Service = Service()) {
+        self.service = service
         loadRegions()
     }
 
-    private func loadRegions() {
-        let service = Service()
-        regions = service.load("Source.json") // Charge les régions depuis le JSON
+    func loadRegions() {
+        do {
+            regions = try service.load("Source.json")
+        } catch {
+            print("Erreur lors du chargement des régions : \(error.localizedDescription)")
+            regions = [] // Valeur par défaut en cas d'erreur
+        }
     }
+
 }

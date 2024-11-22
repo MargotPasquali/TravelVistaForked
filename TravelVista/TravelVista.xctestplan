@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "A51AFDED-BC76-4899-B9E2-FABFFA4DF6EC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TravelVista.xcodeproj",
+      "identifier" : "42B90C0E2B2A055B00779364",
+      "name" : "TravelVista"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:TravelVista.xcodeproj",
+        "identifier" : "AEE1D63B2CF0C1DB002FD509",
+        "name" : "TravelVistaTests"
+      }
+    }
+  ],
+  "version" : 1
+}

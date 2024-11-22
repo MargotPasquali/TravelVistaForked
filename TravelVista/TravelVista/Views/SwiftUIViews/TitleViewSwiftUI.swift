@@ -43,16 +43,3 @@ struct TitleViewSwiftUI: View {
         }    .padding(.trailing, 10.0)
     }
 }
-//#Preview {
-//    let mockCountry = Country(
-//        name: "Italie",
-//        capital: "Rome",
-//        pictureName: "italy",
-//        description: "Un magnifique pays connu pour son histoire.",
-//        rate: 4, // Exemple : 4 étoiles
-//        coordinates:(latitude: 41.9028, longitude: 12.4964)
-//    )
-//    TitleViewSwiftUI(viewModel: DetailViewModel(country: mockCountry))
-//}
-//
-//
